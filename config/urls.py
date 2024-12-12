@@ -23,4 +23,5 @@ from core import views as core_views
 urlpatterns = [
     path("admin/", admin.site.urls),
     path("launch", core_views.launch, name="launch"),
+    path("redirect", core_views.redirect, name="redirect"),
 ]

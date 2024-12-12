@@ -56,3 +56,9 @@ def launch(request):
         "auth_response": auth_response.json(),
     }
     return JsonResponse(all_responses)
+
+
+@xframe_options_exempt
+def redirect(request):
+    print(request.GET)
+    return JsonResponse(request.GET)
